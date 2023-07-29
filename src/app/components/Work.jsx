@@ -1,8 +1,10 @@
 import React from 'react'
+import Styles from '../styles/Work.module.css'
+
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <div className={Styles.container}>Work</div>
   )
 }
 

@@ -1,4 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
 .container{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px;
+    padding-top: 10px;
+    height: 65vh;
     background-color: white;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fcolumn{
+    color: black;
+    font-family: 'Crimson Pro', serif;
+    font-size: 30px;
+}
+.scolumn{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileImage{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.university{
+    display: inline-block;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.tcolumn{
+    color: black;
+    font-family: 'Crimson Pro', serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.position{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.dev{
+    letter-spacing: 10px;
+}
+.dev::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: black;
+}
+.phrase{
+    letter-spacing: 10px;   
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    text-align: center;
 }
