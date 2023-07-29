@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+.container{
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Crimson Pro', serif;
+    color: black;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    color: black;
+    list-style: none;
+}
+.item:hover::after{
+    transform: scaleX(1);
+}
+.item{
+    cursor: pointer;
+}
+
+.item::after{
+    content: "";
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: red;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.contact{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.contact:hover{
+    color: red;
+}
