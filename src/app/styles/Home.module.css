@@ -37,6 +37,9 @@
     border-radius: 10px;
     color: white;
 }
+.university:hover{
+    opacity: 0.8;
+}
 .tcolumn{
     color: black;
     font-family: 'Crimson Pro', serif;
