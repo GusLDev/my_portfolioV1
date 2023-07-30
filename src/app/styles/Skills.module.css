@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+.container{
+    height: 65vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.frontContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    border-radius: 15px;
+    background: #F8F7F1;
+    box-shadow: 0 2px 2px -2px gray;
+}
+.skillTitle{
+    color: black;
+    letter-spacing: 30px;
+}
+.skillContainer{
+    color: black;
+}
+.icon{
+    width: 20px;
+    align-self: center;
+    position: absolute;
+    top: -30px;
+}
+.skillbx{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+}
+.skill{
+    font-size: 20px;
+    font-weight: 800;
+}
+.skill::after{
+    content: "";
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+}
+.experience{
+    font-size: 15px; 
+    font-style: italic;
+}
