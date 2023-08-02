@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+.container{
+    height: 65vh;
+    background: #F8F7F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+.me{
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.formContainer{
+    width: 90%;
+    height: 80%;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    gap: 10px;
+    box-shadow: 0 2px 2px -2px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstRow{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+}
+.secondRow{
+    display: flex;
+    gap: 20px;  
+}
+.input{
+    color: black;
+    background: #F8F7F1;
+    border-radius: 10px;
+    width: 360px;
+    height: 40px;
+    font-size: 15px; 
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.input:focus::placeholder{
+    color: transparent;
+}
+.input::placeholder{
+    font-size: 15px; 
+}
+.message{
+    background: #F8F7F1;
+    width: 740px;
+    border-radius: 10px;
+    height: 150px;
+    font-size: 15px; 
+    color: black;
+    resize: none;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.message::placeholder{
+    font-size: 15px; 
+}
+.message:focus::placeholder{
+    color: transparent;
+}
+.send{
+    color: black;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 18px;
+    font-weight: 700;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+
+}
+.send:hover{
+    background: black;
+    color: white;
+}

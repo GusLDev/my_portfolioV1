@@ -1,8 +1,8 @@
 import React from 'react'
 import Styles from '../styles/Skills.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBootstrap, faReact, faHtml5, faCss3, faJs, faNodeJs} from '@fortawesome/free-brands-svg-icons'
-import { faLeaf,faDatabase} from '@fortawesome/free-solid-svg-icons'
+import { faBootstrap, faReact, faHtml5, faCss3, faJs, faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faLeaf, faDatabase, faChartSimple } from '@fortawesome/free-solid-svg-icons'
 const Skills = () => {
     return (
         <div className={Styles.container}>
@@ -11,14 +11,14 @@ const Skills = () => {
                 <div className={Styles.skillContainer}>
                     <div className={Styles.skillbx}>
                         <FontAwesomeIcon icon={faHtml5} className={Styles.icon} />
-                        <p className={Styles.skill}>HTML</p>
+                        <p className={Styles.skill}>Html</p>
                         <p className={Styles.experience}>Expert</p>
                     </div>
                 </div>
                 <div className={Styles.skillContainer}>
                     <div className={Styles.skillbx}>
                         <FontAwesomeIcon icon={faCss3} className={Styles.icon} />
-                        <p className={Styles.skill}>CSS</p>
+                        <p className={Styles.skill}>Css</p>
                         <p className={Styles.experience}>Intermediate</p>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const Skills = () => {
                 <div className={Styles.skillContainer}>
                     <div className={Styles.skillbx}>
                         <FontAwesomeIcon icon={faBootstrap} className={Styles.icon} />
-                        <p className={Styles.skill}>Bootstrap</p>
+                        <p className={Styles.skill}>BootStrap</p>
                         <p className={Styles.experience}>Intermediate</p>
                     </div>
                 </div>
@@ -65,6 +65,13 @@ const Skills = () => {
                         <FontAwesomeIcon icon={faDatabase} className={Styles.icon} />
                         <p className={Styles.skill}>SQL Server</p>
                         <p className={Styles.experience}>Intermediate</p>
+                    </div>
+                </div>
+                <div className={Styles.skillContainer}>
+                    <div className={Styles.skillbx}>
+                        <FontAwesomeIcon icon={faChartSimple} className={Styles.icon} />
+                        <p className={Styles.skill}>GraphQL</p>
+                        <p className={Styles.experience}>Intermediate-Basic</p>
                     </div>
                 </div>
             </div>

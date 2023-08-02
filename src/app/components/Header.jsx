@@ -13,7 +13,6 @@ const Header = () => {
         <li className={Styles.item}>Home</li>
         <li className={Styles.item}>Works</li>
         <li className={Styles.item}>Skills</li>
-        <li className={Styles.item}>Experience</li>
         <li className={Styles.itemImage}>
           <FontAwesomeIcon icon={faPhone} className={Styles.contact}/>
         </li>

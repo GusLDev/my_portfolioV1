@@ -3,6 +3,8 @@ import Header from './components/Header'
 import HomeSection from './components/Home'
 import Work from './components/Work'
 import Skills from './components/Skills'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 export default function Home() {
   return (
     <div>
@@ -13,6 +15,8 @@ export default function Home() {
         <HomeSection/>
         <Work/>
         <Skills/>
+        <Contact/>
+        <Footer/>
       </main>
     </div>
   )
