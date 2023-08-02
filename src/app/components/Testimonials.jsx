@@ -17,12 +17,36 @@ const Testimonails = () => {
           <p className={Styles.status}>{testimonialsData[selected].status}</p>
         </div>
         <div className={Styles.border}>
-        <Image className={Styles.profileImage}
-              src={testimonialsData[selected].image}
-              width={100}
-              height={100}
-              alt="Picture of the author"
-            />
+          <Image className={Styles.profileImage}
+            src={testimonialsData[selected].image}
+            width={500}
+            height={500}
+            alt="Picture of the author"
+          />
+          <div className={Styles.buttons}>
+            <div className={Styles.btnLeft} onClick={() => {
+              selected === tLength - 1 ? setSelected(0) :
+                setSelected((prev) => prev + 1)
+            }}>
+              <Image className={Styles.image}
+                src='/assets/leftArrow.png'
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+            <div className={Styles.btnRight} onClick={() => {
+              selected === 0 ? setSelected(tLength - 1) :
+                setSelected((prev) => prev - 1)
+            }}>
+              <Image className={Styles.image}
+                src='/assets/rightArrow.png'
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

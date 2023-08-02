@@ -22,8 +22,8 @@ const Home = () => {
           </a>
         </div>
         <div className={Styles.tcolumn}>
-          <h2 className={Styles.position}>FRONT-END <br /><span className={Styles.dev}>DEVELOPER</span></h2>
-          <h3>I like to design, create and <br /> learn new things.</h3>
+          <h2 className={Styles.position}>WEB <br /><span className={Styles.dev}>DEVELOPER</span></h2>
+          <h3 className={Styles.like}>I like to design, create and <br /> learn new things.</h3>
         </div>
       </div>
       <div className={Styles.phrase}>

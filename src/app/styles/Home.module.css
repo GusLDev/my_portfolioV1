@@ -49,7 +49,11 @@
 }
 .position{
     font-size: 30px;
+    text-align: center;
     letter-spacing: 2px;
+}
+.like{
+    text-align: center;
 }
 .dev{
     letter-spacing: 10px;
