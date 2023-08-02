@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from '../styles/Skills.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBootstrap, faReact, faHtml5, faCss3, faJs, faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faBootstrap, faReact, faHtml5, faCss3, faJs, faNodeJs, faJava } from '@fortawesome/free-brands-svg-icons'
 import { faLeaf, faDatabase, faChartSimple } from '@fortawesome/free-solid-svg-icons'
 const Skills = () => {
     return (
@@ -72,6 +72,13 @@ const Skills = () => {
                         <FontAwesomeIcon icon={faChartSimple} className={Styles.icon} />
                         <p className={Styles.skill}>GraphQL</p>
                         <p className={Styles.experience}>Intermediate-Basic</p>
+                    </div>
+                </div>
+                <div className={Styles.skillContainer}>
+                    <div className={Styles.skillbx}>
+                        <FontAwesomeIcon icon={faJava} className={Styles.icon} />
+                        <p className={Styles.skill}>Java</p>
+                        <p className={Styles.experience}>Intermediate</p>
                     </div>
                 </div>
             </div>

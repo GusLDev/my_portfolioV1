@@ -1,4 +1,44 @@
 .container{
     height: 65vh;
-    background-color: white;
+    background: #F8F7F1;
+}
+.testi{
+    font-size: 30px;
+    color: black;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+}
+.stroke{
+    color: black;
+    font-size: 40px;
+}
+.subBox{
+    margin: 30px;
+    display: flex;
+}
+
+.review{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+    font-size: 20px;
+}
+.status{
+    color: white;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    background: black;
+    text-align: center;
+
+}
+.about::after{
+    content: "";
+    display: block;
+    width: 230px;
+    height: 5px;
+    background: black;
 }

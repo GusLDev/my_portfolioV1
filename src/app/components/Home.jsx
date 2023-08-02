@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 const Home = () => {
   return (
     <div className={Styles.container} id='home'>
@@ -25,8 +27,8 @@ const Home = () => {
         </div>
       </div>
       <div className={Styles.phrase}>
-        <p>I'M Looking for new opportunities</p>
-      </div>
+      <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=2000&pause=2000&color=000000&center=true&vCenter=true&width=800&lines=I'M+LOOKING+FOR+NEW+OPPORTUNITIES;I'D+LIKE+TO+BE+YOUR+DEVELOPER" alt="Typing SVG" /></a>
+      </div> 
     </div>
   )
 }

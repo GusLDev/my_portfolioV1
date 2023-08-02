@@ -16,8 +16,8 @@ export default function Home() {
         <HomeSection/>
         <Work/>
         <Skills/>
-        <Contact/>
         <Testimonails/>
+        <Contact/>
         <Footer/>
       </main>
     </div>
