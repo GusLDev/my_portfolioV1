@@ -2,18 +2,21 @@
 .container{
     height: 65vh;
 }
-.header{
+.titles{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header{
     margin: 40px;
     color: black;  
-
 }
 .latest{
-    font-size: 50px;
-}
-.look{   
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 25px;
+    text-transform: uppercase;
 }
 .git{
     display: flex;

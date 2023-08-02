@@ -1,20 +1,18 @@
 import React from 'react'
 import Styles from '../styles/Work.module.css'
 import Image from 'next/image'
-
 const Work = () => {
   return (
-    <div className={Styles.container}>
+    <div className={Styles.container} id='works'>
       <div className={Styles.header}>
-        < div className={Styles.titles}>
+        <div className={Styles.titles}>
           <h2 className={Styles.latest}>My Latest Works</h2>
-          <h3 className={Styles.look}>Take a look!</h3>
+          <a className={Styles.git} href='https://github.com/GusLDev'>EXPLORE MY PROFILE</a>
         </div>
-        <a className={Styles.git} href='https://github.com/GusLDev'>EXPLORE MY PROFILE</a>
       </div>
       <div className={Styles.works}>
         <a href="https://www.naayaritours.com/">
-        <figure className={Styles.card}>
+          <figure className={Styles.card}>
             <Image className={Styles.workImage}
               src="/assets/NaayariTours.png"
               width={500}

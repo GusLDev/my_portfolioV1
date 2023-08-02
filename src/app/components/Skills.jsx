@@ -5,7 +5,7 @@ import { faBootstrap, faReact, faHtml5, faCss3, faJs, faNodeJs } from '@fortawes
 import { faLeaf, faDatabase, faChartSimple } from '@fortawesome/free-solid-svg-icons'
 const Skills = () => {
     return (
-        <div className={Styles.container}>
+        <div className={Styles.container} id='skills'>
             <h2 className={Styles.skillTitle}>FRONT-END SKILLS</h2>
             <div className={Styles.frontContainer}>
                 <div className={Styles.skillContainer}>

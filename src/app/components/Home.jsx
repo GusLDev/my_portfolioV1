@@ -3,7 +3,7 @@ import Styles from '../styles/Home.module.css'
 import Image from 'next/image'
 const Home = () => {
   return (
-    <div className={Styles.container}>
+    <div className={Styles.container} id='home'>
       <div className={Styles.info}>
         <div className={Styles.fcolumn}>
           <h2>Hello, My Name Is<br />Gustavo.</h2>
