@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import Styles from '../styles/Contact.module.css'
 import emailjs from '@emailjs/browser';
+import { motion } from "framer-motion";
 
 const Contact = () => {
     const form = useRef();
@@ -20,8 +21,16 @@ const Contact = () => {
 
     return (
         <div className={Styles.container} id='contact'>
-            <h2 className={Styles.title}>Contact<span className={Styles.me}>Me!</span></h2>
-            <form className={Styles.formContainer} ref={form} onSubmit={sendEmail}>
+            <h2 className={Styles.title}>Contact<motion.span className={Styles.me}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+            >Me!</motion.span></h2>
+            <motion.form className={Styles.formContainer} ref={form} onSubmit={sendEmail}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+            >
                 <div className={Styles.firstRow}>
                     <input type="text" placeholder='FULLNAME' className={Styles.input} name='full_name'/>
                     <input type="text" placeholder='EMAIL ADDRESS' className={Styles.input} name='email_address'/>
@@ -31,10 +40,10 @@ const Contact = () => {
                     <input type="text" placeholder='EMAIL SUBJECT' className={Styles.input} name='email_subject'/>
                 </div>
                 <div className={Styles.thirdRow}>
-                    <textarea placeholder='YOUR MESSAGE' className={Styles.message} name='message'></textarea>
+                    <textarea  placeholder='YOUR MESSAGE' className={Styles.message} name='message'></textarea>
                 </div>
                 <button type="submit" className={Styles.send}>Send Message</button>
-            </form>
+            </motion.form>
         </div>
     )
 }

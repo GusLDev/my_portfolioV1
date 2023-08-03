@@ -97,3 +97,27 @@
     background: black;
     color: white;
 }
+
+@media screen and (max-width: 850px) {
+    .container{
+        height: 65vh;
+    }
+    .input{
+        color: black;
+        background: #F8F7F1;
+        border-radius: 10px;
+        width: 200px;
+        height: 40px;
+        font-size: 15px; 
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+    .message{
+        background: #F8F7F1;
+        width: 400px;
+        border-radius: 10px;
+        height: 150px;
+        font-size: 15px; 
+    }
+}

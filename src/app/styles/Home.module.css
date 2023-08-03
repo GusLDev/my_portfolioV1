@@ -72,3 +72,14 @@
     color: black;
     text-align: center;
 }
+@media screen and (max-width: 850px) {
+    .container{
+        height: 100vh;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .phrase{
+        font-size: 15px;
+    }
+}

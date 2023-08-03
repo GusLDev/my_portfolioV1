@@ -1,16 +1,26 @@
+"use client"
 import React from 'react'
 import Styles from '../styles/Work.module.css'
 import Image from 'next/image'
+import { motion } from "framer-motion";
 const Work = () => {
   return (
     <div className={Styles.container} id='works'>
-      <div className={Styles.header}>
+      <motion.div className={Styles.header}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className={Styles.titles}>
           <h2 className={Styles.latest}>My Latest Works</h2>
           <a className={Styles.git} href='https://github.com/GusLDev'>EXPLORE MY PROFILE</a>
         </div>
-      </div>
-      <div className={Styles.works}>
+      </motion.div>
+      <motion.div className={Styles.works}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+      >
         <a href="https://www.naayaritours.com/">
           <figure className={Styles.card}>
             <Image className={Styles.workImage}
@@ -28,7 +38,7 @@ const Work = () => {
             </div>
           </figure>
         </a>
-      </div>
+      </motion.div>
     </div>
   )
 }

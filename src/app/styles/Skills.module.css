@@ -19,6 +19,7 @@
     border-radius: 15px;
     background: #F8F7F1;
     box-shadow: 0 2px 2px -2px gray;
+    flex-wrap: wrap;
 }
 .skillTitle{
     color: black;
@@ -58,6 +59,7 @@
 .backContainer{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     width: 80%;
@@ -66,4 +68,13 @@
     background: #F8F7F1;
     box-shadow: 0 2px 2px -2px gray;
     margin-bottom: 20px;
+}
+@media screen and (max-width: 850px) {
+    .container{
+        height: 100vh;
+    }
+    .skillTitle{
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
 }

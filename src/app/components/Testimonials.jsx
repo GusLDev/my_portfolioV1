@@ -3,20 +3,33 @@ import React, { useState } from 'react'
 import Styles from '../styles/Testimonials.module.css'
 import { testimonialsData } from '../data/testimonialsData'
 import Image from 'next/image'
+import { motion } from "framer-motion";
 
 const Testimonails = () => {
   const [selected, setSelected] = useState(0);
   const tLength = testimonialsData.length;
   return (
     <div className={Styles.container} id='testimonials'>
-      <h2 className={Styles.testi}>Testimonials</h2>
+      <motion.h2 className={Styles.testi}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}>Testimonials
+      </motion.h2>
       <div className={Styles.subBox}>
-        <div className={Styles.info}>
+        <motion.div className={Styles.info}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h3 className={Styles.stroke}>WHAT THEY<br /><span className={Styles.about}>SAY ABOUT ME</span></h3>
           <p className={Styles.review}>{testimonialsData[selected].review}</p>
           <p className={Styles.status}>{testimonialsData[selected].status}</p>
-        </div>
-        <div className={Styles.border}>
+        </motion.div>
+        <motion.div className={Styles.border}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+        >
           <Image className={Styles.profileImage}
             src={testimonialsData[selected].image}
             width={500}
@@ -47,7 +60,7 @@ const Testimonails = () => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

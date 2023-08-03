@@ -17,6 +17,19 @@
     gap: 10px;
 }
 .icon{
-    width: 30px;
+    font-size: 30px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .icon{
+        font-size: 20px;
+        cursor: pointer;
+    }  
+    .sapere{
+        font-size: 20px;
+    }
+    .copy{
+        font-size: 15px;
+    }
 }

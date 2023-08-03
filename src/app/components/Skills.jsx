@@ -1,13 +1,23 @@
+"use client"
 import React from 'react'
 import Styles from '../styles/Skills.module.css'
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBootstrap, faReact, faHtml5, faCss3, faJs, faNodeJs, faJava } from '@fortawesome/free-brands-svg-icons'
 import { faLeaf, faDatabase, faChartSimple } from '@fortawesome/free-solid-svg-icons'
 const Skills = () => {
     return (
         <div className={Styles.container} id='skills'>
-            <h2 className={Styles.skillTitle}>FRONT-END SKILLS</h2>
-            <div className={Styles.frontContainer}>
+            <motion.h2 className={Styles.skillTitle}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >FRONT-END SKILLS</motion.h2>
+            <motion.div className={Styles.frontContainer}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+            >
                 <div className={Styles.skillContainer}>
                     <div className={Styles.skillbx}>
                         <FontAwesomeIcon icon={faHtml5} className={Styles.icon} />
@@ -43,9 +53,16 @@ const Skills = () => {
                         <p className={Styles.experience}>Intermediate</p>
                     </div>
                 </div>
-            </div>
-            <h2 className={Styles.skillTitle}>BACK-END SKILLS</h2>
-            <div className={Styles.backContainer}>
+            </motion.div>
+            <motion.h2 className={Styles.skillTitle}
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+            >BACK-END SKILLS</motion.h2>
+            <motion.div className={Styles.backContainer}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}>
                 <div className={Styles.skillContainer}>
                     <div className={Styles.skillbx}>
                         <FontAwesomeIcon icon={faNodeJs} className={Styles.icon} />
@@ -81,7 +98,7 @@ const Skills = () => {
                         <p className={Styles.experience}>Intermediate</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
